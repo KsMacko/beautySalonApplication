@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salonclient.Controllers.Client.CatalogController">
+   <content>
+      <AnchorPane>
+         <children>
+            <VBox AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#resetFilters" style="-fx-background-color: transparent; -fx-border-color: #4a2d77; -fx-border-radius: 10;" text="Обновить" textFill="#4a2d77">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label text="Поиск" textFill="#4a2d77">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="search" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" minHeight="100.0">
+                     <children>
+                        <GridPane maxWidth="350.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Slider fx:id="minPrice" value="50.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                              <Slider fx:id="maxPrice" value="50.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+                              <Label minWidth="50.0" text="Цена" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label text="от" />
+                                    <Label fx:id="minPriceLabel" text="Label">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </HBox>
+                              <Label minWidth="100.0" text="Длительность">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="от" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <Label text="до" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                              <ComboBox fx:id="minHour" minWidth="60.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: #4a2d77; -fx-border-radius: 10;" GridPane.columnIndex="2" />
+                              <ComboBox fx:id="maxHour" minWidth="60.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: #4a2d77; -fx-border-radius: 10;" GridPane.columnIndex="4" />
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <Label text="до" />
+                                    <Label fx:id="maxPriceLabel" text="Label">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <MenuButton minWidth="150.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #4a2d77; -fx-border-radius: 10;" text="Сортировать по">
+                          <items>
+                            <MenuItem fx:id="priceSort" mnemonicParsing="false" text="Цена" />
+                            <MenuItem fx:id="durationSort" mnemonicParsing="false" text="Длительность" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="vBox" alignment="TOP_CENTER" spacing="40.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

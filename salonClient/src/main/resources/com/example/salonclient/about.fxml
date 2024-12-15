@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane>
+         <children>
+            <VBox spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </padding>
+               <children>
+                  <Label text="О нас">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="1.7976931348623157E308" minHeight="80.0" text="Добро пожаловать в наш оазис красоты и релаксации! Наш косметический салон создан с одной целью — подарить вам уникальный опыт ухода и заботы о себе, который вы заслуживаете.Каждый уголок нашего салона пропитан атмосферой уюта и роскоши, чтобы каждое ваше посещение стало настоящим праздником. Мы гордимся тем, что используем только высококачественную натуральную косметику, которая не только заботится о вашей коже, но и придает ей здоровье и сияние. Все наши средства тщательно отобраны, чтобы дарить вам только самые лучшие результаты без компромиссов." wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label minHeight="80.0" text="Наши мастера — это настоящие профессионалы, которые постоянно совершенствуют свои навыки и проходят обучение у ведущих экспертов индустрии. Вы можете быть уверены, что находитесь в надежных руках, и каждый визит к нам будет приносить вам радость и уверенность в себе. Мы предлагаем широкий спектр услуг — от современных стрижек и укладок до маникюра, педикюра, ухода за лицом и расслабляющих массажей." wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label minHeight="40.0" text="Создавая салон, мы стремились к тому, чтобы каждый наш клиент чувствовал себя особенным. Индивидуальный подход к каждому посетителю, внимательное отношение и забота о деталях — это то, что отличает нас. Мы учитываем все ваши пожелания и стараемся превзойти ваши ожидания." wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label minHeight="50.0" text="Особое внимание мы уделяем чистоте и гигиене. В нашем салоне строго соблюдаются все санитарные нормы и стандарты, чтобы обеспечить вам максимальный комфорт. Вы можете полностью расслабиться и наслаждаться процедурами, зная, что ваше здоровье в надежных руках." wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label minHeight="50.0" text="Приходите к нам и окунитесь в мир красоты и гармонии. Мы с нетерпением ждем встречи с вами и готовы подарить вам незабываемые моменты заботы о себе. Ваше счастье и уверенность в своей красоте — наша главная цель." wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox maxHeight="400.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@uhod.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@salon1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

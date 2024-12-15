@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="320.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salonclient.Controllers.Admin.Cards.AddOrEditMasterController">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+         <content>
+            <AnchorPane maxWidth="310.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <AnchorPane style="-fx-background-color: #221623;">
+                           <children>
+                              <AnchorPane layoutX="10.399999618530273" layoutY="10.399999618530273" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                                 <children>
+                                    <VBox spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <ImageView fx:id="img" fitHeight="280.0" fitWidth="280.0" pickOnBounds="true">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <HBox spacing="10.0">
+                                             <children>
+                                                <Label text="ФИО: ">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fio" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="20.0">
+                                             <children>
+                                                <Label text="Услуга">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="serviceChoice" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="25.0">
+                                             <children>
+                                                <Label text="Опыт">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="exp" maxWidth="100.0" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="20.0">
+                                             <children>
+                                                <Label text="Ставка (руб/час)">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="hourRate" maxWidth="100.0" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                          <Label text="Рабоче дни: ">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox>
+                                             <children>
+                                                <CheckBox fx:id="Mn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Пн" HBox.hgrow="ALWAYS" />
+                                                <CheckBox fx:id="Ts" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Вт" HBox.hgrow="ALWAYS" />
+                                                <CheckBox fx:id="Wd" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Ср" HBox.hgrow="ALWAYS" />
+                                                <CheckBox fx:id="Th" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Чт" HBox.hgrow="ALWAYS" />
+                                                <CheckBox fx:id="Fr" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Пт" HBox.hgrow="ALWAYS" />
+                                                <CheckBox fx:id="St" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Сб" HBox.hgrow="ALWAYS" />
+                                                <CheckBox fx:id="Sn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Вс" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="5.0">
+                                             <children>
+                                                <Label text="Время работы:">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label maxWidth="1.7976931348623157E308" text="с" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="timePickerStart" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <Label maxWidth="1.7976931348623157E308" text="по" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="timePickerEnd" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="25.0">
+                                             <children>
+                                                <TextField fx:id="imgPath" maxWidth="1.7976931348623157E308" promptText="Аватар" HBox.hgrow="ALWAYS" />
+                                                <Button maxWidth="1.7976931348623157E308" minHeight="15.0" minWidth="100.0" mnemonicParsing="false" onAction="#toFindTheImage" style="-fx-background-color: #4a2d77; -fx-background-radius: 10;" text="Найти" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Button maxWidth="1.7976931348623157E308" minHeight="40.0" mnemonicParsing="false" onAction="#toUpdateMaster" style="-fx-background-color: #4a2d77; -fx-background-radius: 10;" text="Сохранить" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button maxWidth="1.7976931348623157E308" minHeight="40.0" mnemonicParsing="false" onAction="#toDeny" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="Отменить" textFill="#4a2d77">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

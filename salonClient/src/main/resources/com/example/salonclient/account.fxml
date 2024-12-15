@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salonclient.Controllers.Client.AccountController">
+   <content>
+      <AnchorPane>
+         <children>
+            <VBox fx:id="account" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="“БЕЛЫЙ ЛОТОС” -ЛУЧШИЙ КОСМЕТИЧЕСКИЙ САЛОН В МИНСКЕ!">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator maxWidth="1.7976931348623157E308" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER_LEFT" maxHeight="180.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="img" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <Label maxHeight="1.7976931348623157E308" text="Имя:">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="name" maxHeight="1.7976931348623157E308">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <Label maxHeight="1.7976931348623157E308" text="Номер телефона: ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="telephone" maxHeight="1.7976931348623157E308">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <Label maxHeight="1.7976931348623157E308" text="Дата рождения: ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="birthDate" maxHeight="1.7976931348623157E308">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <Label maxHeight="1.7976931348623157E308" text="Пол: ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sex" maxHeight="1.7976931348623157E308">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" top="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button minHeight="30.0" minWidth="250.0" mnemonicParsing="false" onAction="#toEditData" style="-fx-background-color: #4a2d77; -fx-background-radius: 10;" text="Редактировать данные аккаунта" textFill="#e4dfd3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button minHeight="35.0" minWidth="120.0" mnemonicParsing="false" onAction="#toExit" style="-fx-border-color: #4a2d77; -fx-background-color: #ffffff; -fx-border-radius: 10;" text="Выход из аккаунта" textFill="#4a2d77">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label text="Активные записи">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <FlowPane fx:id="flow">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <StackPane fx:id="auth" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <children>
+                        <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane maxHeight="250.0" maxWidth="200.0" StackPane.alignment="CENTER">
+                                 <children>
+                                    <VBox spacing="10.0">
+                                       <children>
+                                          <Label fx:id="wayLabel" minHeight="40.0" minWidth="200.0" text="Авторизация" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="40.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField fx:id="login" promptText="логин" />
+                                          <TextField fx:id="password" promptText="пароль" />
+                                          <TextField fx:id="repeatPassword" promptText="повторите пароль" />
+                                          <Button fx:id="Enter" maxWidth="1.7976931348623157E308" minHeight="40.0" mnemonicParsing="false" onAction="#toAuthorise" style="-fx-background-color: #221623;" text="Войти" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="Change" minWidth="200.0" mnemonicParsing="false" onAction="#ChangeTheWay" style="-fx-background-color: transparent;" text="Регистрация" textFill="#221623">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

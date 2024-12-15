@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="600.0" style="-fx-background-color: radial-gradient( center 50.0% 50.0%, radius 80%, #ffffff 70%,   #4a2d77 100%);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salonclient.Controllers.Client.EditPersonalDataController">
+   <children>
+      <AnchorPane layoutX="-10.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #221623;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+               <children>
+                  <VBox spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Label text="Редактирование данных" textFill="#4a2d77">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <Label text="Имя">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="name" />
+                                 </children>
+                              </HBox>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <Label text="Телефон ">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="telephone" promptText="+375 (__) ___ __ __" />
+                                 </children>
+                              </HBox>
+                              <HBox spacing="15.0">
+                                 <children>
+                                    <ImageView fx:id="img" fitHeight="150.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" />
+                                    <VBox alignment="CENTER_LEFT" spacing="15.0">
+                                       <children>
+                                          <HBox spacing="15.0">
+                                             <children>
+                                                <Label text="Аватар">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="imgPath" editable="false" HBox.hgrow="ALWAYS" />
+                                                <Button minHeight="20.0" minWidth="100.0" mnemonicParsing="false" onAction="#FindImage" style="-fx-background-color: #4a2d77; -fx-background-radius: 10;" text="Найти" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="15.0">
+                                             <children>
+                                                <Label text="Пол ">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <MenuButton fx:id="sex" minWidth="120.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 10; -fx-border-color: #4a2d77;">
+                                                  <items>
+                                                    <MenuItem fx:id="female" mnemonicParsing="false" text="Женский" />
+                                                    <MenuItem fx:id="male" mnemonicParsing="false" text="Мужской" />
+                                                  </items>
+                                                </MenuButton>
+                                             </children>
+                                          </HBox>
+                                          <HBox spacing="15.0">
+                                             <children>
+                                                <Label minWidth="120.0" text="Дата рождения" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="birthDate" editable="false" promptText="день.месяц.год" />
+                                                <Button minHeight="20.0" minWidth="100.0" mnemonicParsing="false" onAction="#setCalendar" style="-fx-background-color: #4a2d77; -fx-background-radius: 10;" text="Выбрать" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <StackPane>
+                           <children>
+                              <Button minHeight="35.0" minWidth="120.0" mnemonicParsing="false" onAction="#toClose" style="-fx-border-color: #4a2d77; -fx-background-color: #ffffff; -fx-border-radius: 10;" text="Отмена" textFill="#4a2d77" StackPane.alignment="CENTER_LEFT">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#toSave" style="-fx-background-color: #4a2d77; -fx-background-radius: 10;" text="Сохранить" textFill="#e4dfd3" StackPane.alignment="CENTER_RIGHT">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

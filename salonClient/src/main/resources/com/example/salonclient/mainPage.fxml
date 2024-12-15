@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane>
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Добро пожаловать в &quot;Белый лотос&quot;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" text="Выберите подходящий SPA-комплекс и получите удовольствие с пользой для тела и души.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label maxHeight="1.7976931348623157E308" text="Мы предлагаем" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@uhod-kerastase.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="ИСПОЛЬЗОВАНИЕ ОРИГИНАЛЬНОЙ КОСМЕТИКИ" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label maxHeight="150.0" maxWidth="300.0" text="СПА-ритуалы и программы выполняются на профессиональной косметике с акцентом на натуральных составляющих." wrapText="true" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@930f2ac676cbbbbc2af93de0f593595b.jpeg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="ПРЕМИАЛЬНЫЕ СТАНДАРТЫ ЧИСТОТЫ И ГИГИЕНЫ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Мы строго соблюдаем все санитарные нормы и стандарты, все инструменты стерилизуются перед каждым использованием, а помещение регулярно дезинфицируется. " wrapText="true" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@rg1Yrv4fmDXSgdxaM7lJYbqu3Av0VDdSPKpadOlJ.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="КАЧЕСТВО КОСМЕТИЧЕСКИХ УСЛУГ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Наши мастера имеют много опыта в своей профессии и оставят лучшее впечатление о проделанной ими работе" wrapText="true" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@uhod.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="ИНДИВИДУАЛЬНЫЙ ПОДХОД К КАЖДОМУ КЛИЕНТУ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Мы всегда прислушиваемся к вашим желаниям и предлагаем решения, которые идеально подойдут именно вам, ценим каждого клиента и стремимся сделать ваше посещение незабываемым" wrapText="true" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" text="Наш салон">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="800.0" minHeight="300.0" vbarPolicy="NEVER">
+                           <content>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <children>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@salon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@salon1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@salon2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
