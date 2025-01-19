@@ -253,7 +253,6 @@ public class SummaryMainController {
     }
 
     public void fillTable(List<Schedule> schedules, boolean income) {
-
         LocalDate today = LocalDate.now();
         schedules = schedules.stream()
                 .filter(schedule -> isWithinPeriod(schedule.getDate(), income))
@@ -481,7 +480,6 @@ public class SummaryMainController {
         if(income) headers.add("Общая прибыль");
         return new ArrayList<>(headers);
     }
-
     private boolean isWithinPeriod(LocalDate date, boolean income) {
         LocalDate startDate;
         LocalDate endDate = LocalDate.now();
@@ -506,7 +504,6 @@ public class SummaryMainController {
         };
         return (date.isEqual(startDate) || date.isAfter(startDate)) && (date.isEqual(endDate) || date.isBefore(endDate));
     }
-
 
     private List<String> getServiceNames(List<Schedule> schedules) {
         return schedules.stream() .map(Schedule::getServiceName) .distinct() .collect(Collectors.toList()); }
